@@ -1,7 +1,7 @@
 import Vue       from 'vue'
 import VueRouter from 'vue-router'
 
-import Home from '../sections/Home'
+import Color from '../sections/Color';
 
 Vue.use(VueRouter)
 
@@ -11,8 +11,8 @@ export default new VueRouter({
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: Home
+      name: 'color',
+      component: Color
     },
     {
       path     : '*',

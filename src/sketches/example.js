@@ -1,13 +1,11 @@
 export const example = sketch => {
 
-  console.log(window);
-
   const x = 100;
   const y = 100;
 
   sketch.setup = function() {
     const canvas = sketch.createCanvas(200, 200);
-    canvas.parent('home');
+    canvas.parent('color');
   };
 
   sketch.draw = function() {
@@ -15,4 +13,4 @@ export const example = sketch => {
     sketch.fill(255);
     sketch.rect(x, y, 50, 50);
   };
-}
+};

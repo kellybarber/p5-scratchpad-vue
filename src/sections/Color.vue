@@ -5,20 +5,17 @@
 <script>
   import {
     helloColor,
-    colorSpectrumGrid
+    colorSpectrumGrid,
+    starField
   } from '../sketches';
 
   export default {
     name: 'Home',
     data() {
-      return {
-        sketches : [ colorSpectrumGrid ]
-      }
+      return {}
     },
     mounted() {
-      this.sketches.forEach(sketch => {
-        this.loadSketch(sketch);
-      })
+      this.loadSketch(starField);
     },
     methods : {
       loadSketch(sketch) {
@@ -29,15 +26,14 @@
 </script>
 
 <style>
+
   #color {
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    background-color: #222;
   }
 
-  #color > * {
-    margin-bottom: 60px;
-  }
 </style>
